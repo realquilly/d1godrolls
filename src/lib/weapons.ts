@@ -34,10 +34,6 @@ export function getArchetype(id: string): Archetype {
   return archetype;
 }
 
-export function getArchetypesForCategory(categoryId: WeaponCategoryId): Archetype[] {
-  return archetypes.filter((a) => a.categoryId === categoryId);
-}
-
 export type ImpactTier = "Low Impact" | "Mid Impact" | "High Impact" | "Other";
 
 const impactTiers: ImpactTier[] = ["Low Impact", "Mid Impact", "High Impact", "Other"];
