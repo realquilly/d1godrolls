@@ -522,7 +522,7 @@ export const weapons: Weapon[] = [
   // PULSE RIFLE - Hakke 4-shot
   { id: "pulse-rifle-hakke-4-shot--apple-of-discord", name: "Apple of Discord", categoryId: "pulse-rifle", archetypeId: "pulse-rifle-hakke-4-shot", tier: "recommended", source: "Vanguard Weapon Package / Legendary Engrams" },
   { id: "pulse-rifle-hakke-4-shot--herja-d", name: "Herja-D", categoryId: "pulse-rifle", archetypeId: "pulse-rifle-hakke-4-shot", tier: "recommended", source: "Gunsmith Armsday Package / Gunsmith Rank Up Package" },
-  { id: "pulse-rifle-hakke-4-shot--lyudmilla-d", name: "Lyudmilla-D", categoryId: "pulse-rifle", archetypeId: "pulse-rifle-hakke-4-shot", tier: "recommended", source: "Gunsmith Armsday Package / Gunsmith Rank Up Package" },
+  { id: "pulse-rifle-hakke-4-shot--lyudmila-d", name: "Lyudmila-D", categoryId: "pulse-rifle", archetypeId: "pulse-rifle-hakke-4-shot", tier: "recommended", source: "Gunsmith Armsday Package / Gunsmith Rank Up Package" },
 
   // SCOUT RIFLE - Mid Impact
   { id: "scout-rifle-mid-impact--treads-upon-stars", name: "Treads Upon Stars", categoryId: "scout-rifle", archetypeId: "scout-rifle-mid-impact", tier: "recommended", source: "Cerberus Vae III [320/350]", requiresSkeletonKey: true, notes: "Easiest to farm; guaranteed drop from the hoard chest in this strike." },
@@ -541,7 +541,7 @@ export const weapons: Weapon[] = [
   { id: "scout-rifle-high-impact--keystone-01", name: "Keystone 01", categoryId: "scout-rifle", archetypeId: "scout-rifle-high-impact", tier: "recommended", source: "Dead Orbit Weapon Package / Dead Orbit Vendor", notes: "Great starting Scout with a god roll until you get a better one. Cannot roll Life Support." },
   { id: "scout-rifle-high-impact--badger-ccl", name: "Badger CCL", categoryId: "scout-rifle", archetypeId: "scout-rifle-high-impact", tier: "recommended", source: "Sunrise Weekly Strike Bounty / Vanguard Weapon Package", notes: "Most recommended High Impact to farm for; easier to farm than others." },
   { id: "scout-rifle-high-impact--colovances-duty", name: "Colovance's Duty", categoryId: "scout-rifle", archetypeId: "scout-rifle-high-impact", tier: "recommended", source: "Crucible Weekly Scout Bounty", notes: "Second lowest drop from the bounty. Known as one of the best High Impacts in the game." },
-  { id: "scout-rifle-high-impact--hand-of-judgement", name: "Hand of Judgement", categoryId: "scout-rifle", archetypeId: "scout-rifle-high-impact", tier: "recommended", source: "Challenge of the Elders", notes: "Weird perk pool setup but still good. Rivals Colovance's Duty." },
+  { id: "scout-rifle-high-impact--hand-of-judgment", name: "Hand of Judgment", categoryId: "scout-rifle", archetypeId: "scout-rifle-high-impact", tier: "recommended", source: "Challenge of the Elders", notes: "Weird perk pool setup but still good. Rivals Colovance's Duty." },
 
   // HAND CANNON - Mid Impact
   { id: "hand-cannon-mid-impact--the-palindrome", name: "The Palindrome", categoryId: "hand-cannon", archetypeId: "hand-cannon-mid-impact", tier: "recommended", source: "Crucible Weekly Hand Cannon Bounty / Crucible Match Drop / Crucible Quartermaster", notes: "Easiest to get. Can roll a hybrid (Explosive Rounds and Rifled Barrel on the same perk row)." },
@@ -577,7 +577,7 @@ export const weapons: Weapon[] = [
   { id: "shotgun-all--stolen-will", name: "Stolen Will", categoryId: "shotgun", archetypeId: "shotgun-all", tier: "recommended", source: "Winter's Run [320/350]", requiresSkeletonKey: true, notes: "Guaranteed drop from the hoard chest." },
   { id: "shotgun-all--her-champion", name: "Her Champion", categoryId: "shotgun", archetypeId: "shotgun-all", tier: "recommended", source: "Challenge of the Elders" },
   { id: "shotgun-all--patch-a", name: "Patch-A", categoryId: "shotgun", archetypeId: "shotgun-all", tier: "omitted", source: "Dead Orbit Weapon Rank Up Packages (Taken King DLC only)", notes: "Best damage output shotgun in Destiny 1. The Next Big Thing is the only shotgun that rivals it." },
-  { id: "shotgun-all--burden-of-proof", name: "Burden of Proof", categoryId: "shotgun", archetypeId: "shotgun-all", tier: "omitted", source: "New Monarchy Weapon Rank Up Packages (Taken King DLC only)" },
+  { id: "shotgun-all--burden-of-proof-xi", name: "Burden of Proof XI", categoryId: "shotgun", archetypeId: "shotgun-all", tier: "omitted", source: "New Monarchy Weapon Rank Up Packages (Taken King DLC only)" },
 
   // SHOTGUN - Void Hunter Roll
   { id: "shotgun-void-hunter--stolen-will", name: "Stolen Will", categoryId: "shotgun", archetypeId: "shotgun-void-hunter", tier: "recommended", source: "Winter's Run [320/350]", requiresSkeletonKey: true, notes: "Guaranteed drop from the hoard chest." },

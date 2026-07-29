@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
   Command,
@@ -34,9 +35,20 @@ export function WeaponSearch({ weapons }: { weapons: WeaponSummary[] }) {
                 key={weapon.slug}
                 value={weapon.name}
                 onSelect={() => router.push(`/weapon/${weapon.slug}`)}
-                className="flex items-center justify-between gap-3"
+                className="flex items-center gap-3"
               >
-                <div className="flex flex-col">
+                {weapon.icon ? (
+                  <Image
+                    src={weapon.icon}
+                    alt=""
+                    width={32}
+                    height={32}
+                    className="size-8 shrink-0 rounded bg-muted"
+                  />
+                ) : (
+                  <div className="size-8 shrink-0 rounded bg-muted" />
+                )}
+                <div className="flex flex-1 flex-col">
                   <span className="font-medium">{weapon.name}</span>
                   <span className="text-xs text-muted-foreground">
                     {weapon.archetypeNames.join(" · ")}

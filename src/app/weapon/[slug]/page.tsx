@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -16,6 +17,7 @@ import { TierBadge } from "@/components/tier-badge";
 import {
   getArchetype,
   getCategory,
+  getWeaponIcon,
   getWeaponSummaries,
   getWeaponsBySlug,
 } from "@/lib/weapons";
@@ -37,6 +39,7 @@ export default async function WeaponPage({
   }
 
   const category = getCategory(entries[0].categoryId);
+  const icon = getWeaponIcon(slug);
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-12">
@@ -48,14 +51,27 @@ export default async function WeaponPage({
         Back to search
       </Link>
 
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-wrap items-center gap-2">
-          <Badge variant="outline">{category.group}</Badge>
-          <Badge variant="outline">{category.name}</Badge>
+      <div className="flex items-center gap-4">
+        {icon ? (
+          <Image
+            src={icon}
+            alt=""
+            width={64}
+            height={64}
+            className="size-16 shrink-0 rounded-lg bg-muted"
+          />
+        ) : (
+          <div className="size-16 shrink-0 rounded-lg bg-muted" />
+        )}
+        <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge variant="outline">{category.group}</Badge>
+            <Badge variant="outline">{category.name}</Badge>
+          </div>
+          <h1 className="text-3xl font-semibold tracking-tight">
+            {entries[0].name}
+          </h1>
         </div>
-        <h1 className="text-3xl font-semibold tracking-tight">
-          {entries[0].name}
-        </h1>
       </div>
 
       <Tabs defaultValue="pve">
