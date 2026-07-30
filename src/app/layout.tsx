@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "D1 God Rolls",
   description: "Search Destiny 1 legendary weapons for their PvE and PvP god rolls.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
