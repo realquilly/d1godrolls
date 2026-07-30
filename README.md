@@ -2,6 +2,8 @@
 
 Search any Destiny 1 legendary weapon and see its PvE and PvP god rolls.
 
+Live at [d1godrolls.vercel.app](https://d1godrolls.vercel.app).
+
 Built with Next.js, Tailwind CSS, and shadcn/ui. Weapon roll data is
 sourced from the Destiny 1 Discord community roll threads.
 
