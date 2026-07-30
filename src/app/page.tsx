@@ -20,7 +20,11 @@ export default function Home() {
           >
             The Last Destiny City
           </a>{" "}
-          Discord server&apos;s #threads channel.
+          Discord server&apos;s{" "}
+          <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">
+            #threads
+          </code>{" "}
+          channel.
         </p>
       </div>
       <WeaponBrowser weapons={weapons} categories={categories} />
