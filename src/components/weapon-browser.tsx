@@ -55,10 +55,7 @@ export function WeaponBrowser({
   return (
     <div className="flex w-full flex-col gap-4">
       <WeaponFilters categories={categories} value={filters} onChange={setFilters} />
-      <WeaponSearch weapons={summaries} />
-      <p className="text-center text-xs text-muted-foreground">
-        {summaries.length} of {totalCount} weapons shown
-      </p>
+      <WeaponSearch weapons={summaries} totalCount={totalCount} />
     </div>
   );
 }

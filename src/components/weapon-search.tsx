@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useCommandState } from "cmdk";
 import {
   Command,
   CommandEmpty,
@@ -13,7 +14,25 @@ import {
 import { TierBadge } from "@/components/tier-badge";
 import type { WeaponSummary } from "@/lib/weapons";
 
-export function WeaponSearch({ weapons }: { weapons: WeaponSummary[] }) {
+// Must render inside <Command> to read cmdk's own live-filtered count —
+// that's the only place that knows how many items match the typed search.
+function ResultCount({ total }: { total: number }) {
+  const visible = useCommandState((state) => state.filtered.count);
+  if (visible === 0) return null;
+  return (
+    <p className="text-center text-xs text-muted-foreground">
+      {visible} of {total} weapons shown
+    </p>
+  );
+}
+
+export function WeaponSearch({
+  weapons,
+  totalCount,
+}: {
+  weapons: WeaponSummary[];
+  totalCount: number;
+}) {
   const router = useRouter();
 
   const byCategory = new Map<string, WeaponSummary[]>();
@@ -60,6 +79,7 @@ export function WeaponSearch({ weapons }: { weapons: WeaponSummary[] }) {
           </CommandGroup>
         ))}
       </CommandList>
+      <ResultCount total={totalCount} />
     </Command>
   );
 }
